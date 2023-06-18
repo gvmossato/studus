@@ -19,10 +19,16 @@
           </v-col>
 
           <v-col class="my-8" cols="12" sm="8" md="7" lg="6">
-            <v-form netlify class="d-flex flex-column flex-md-row align-center">
+            <v-form
+              method="POST"
+              name="user"
+              class="d-flex flex-column flex-md-row align-center"
+              netlify
+            >
               <v-text-field
                 append-icon="mdi-email"
                 placeholder="Email"
+                name="email"
                 type="email"
                 class="mb-4 mb-md-0 mr-md-4"
                 validate-on-blur
