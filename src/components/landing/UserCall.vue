@@ -24,6 +24,8 @@
               name="user"
               class="d-flex flex-column flex-md-row align-center"
               netlify
+
+              @submit.prevent="handleSubmit"
             >
               <v-text-field
                 append-icon="mdi-email"
@@ -43,8 +45,6 @@
                 class="primary--btn"
                 type="submit"
                 rounded
-
-                @click.prevent="handleSubmit"
               >
                 Conhecer
               </v-btn>
