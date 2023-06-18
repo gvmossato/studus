@@ -19,7 +19,7 @@
           </v-col>
 
           <v-col class="my-8" cols="12" sm="8" md="7" lg="6">
-            <v-form
+            <form
               method="POST"
               name="user"
               class="d-flex flex-column flex-md-row align-center"
@@ -48,7 +48,7 @@
               >
                 Conhecer
               </v-btn>
-            </v-form>
+            </form>
           </v-col>
 
           <v-col class="text-center text-md-left white--text" cols="12" sm="9" lg="6">
