@@ -48,9 +48,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@400;700&display=swap');
-
 html, body, main {
   font-family: Nunito, Arial, Helvetica, sans-serif;
   font-size: 13pt;
