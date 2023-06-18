@@ -69,6 +69,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'UserCall',
 
@@ -88,12 +90,26 @@ export default {
   }),
 
   methods: {
+    encodeForm(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
+        )
+        .join('&');
+    },
+
     handleSubmit() {
       if (Object.keys(this.rules).every(
         (el) => this.rules[el](this.email),
       )) this.validForm = true;
 
       if (this.validForm) {
+        axios.post(
+          '/',
+          this.encodeForm({ 'form-name': 'user', email: this.email }),
+          { header: { 'Content-Type': 'application/x-www-form-urlencoded' } },
+        );
+
         setTimeout(() => {
           this.showSuccessAlert = true;
         }, 100);
