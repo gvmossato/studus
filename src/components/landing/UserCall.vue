@@ -19,7 +19,7 @@
           </v-col>
 
           <v-col class="my-8" cols="12" sm="8" md="7" lg="6">
-            <v-form class="d-flex flex-column flex-md-row align-center">
+            <v-form netlify class="d-flex flex-column flex-md-row align-center">
               <v-text-field
                 append-icon="mdi-email"
                 placeholder="Email"
