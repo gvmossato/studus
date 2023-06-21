@@ -105,11 +105,13 @@ export default {
       )) this.validForm = true;
 
       if (this.validForm) {
-        axios.post(
-          '/',
-          this.encodeForm({ 'form-name': 'user', email: this.email }),
-          { header: { 'Content-Type': 'application/x-www-form-urlencoded' } },
-        );
+        if (process.env.NODE_ENV === 'production') {
+          axios.post(
+            '/',
+            this.encodeForm({ 'form-name': 'user', email: this.email }),
+            { header: { 'Content-Type': 'application/x-www-form-urlencoded' } },
+          );
+        }
 
         setTimeout(() => {
           this.showSuccessAlert = true;
