@@ -27,9 +27,14 @@ export default {
     PageFooter,
   },
 
-  data: () => ({
-    //
-  }),
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to) {
+        document.title = to.meta.title || 'studus';
+      },
+    },
+  },
 
   computed: {
     alwaysWhite() { return this.$route.name !== 'home'; },
