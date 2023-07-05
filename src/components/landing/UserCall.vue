@@ -14,7 +14,7 @@
 
           <v-col class="text-center text-md-left white--text" cols="12" sm="8" md="7" lg="6">
             <h1 class="text--h1">
-              Faça do mundo o seu <strong>campus</strong>!
+              Nós resolvemos a <strong>papelada</strong> do intercâmbio para você!
             </h1>
           </v-col>
 
@@ -46,7 +46,7 @@
                 type="submit"
                 rounded
               >
-                Conhecer
+                Embarcar
               </v-btn>
             </form>
           </v-col>
