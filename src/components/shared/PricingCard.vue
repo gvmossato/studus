@@ -21,7 +21,7 @@
       <h1>{{ plan.price }}</h1>
       <div class="my-auto ml-2">
         <p class="currency--text">R$</p>
-        <p class="currency--text">por Mês</p>
+        <p class="currency--text">por Ano</p>
       </div>
     </div>
 
